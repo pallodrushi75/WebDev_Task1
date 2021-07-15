@@ -1,0 +1,140 @@
+
+
+body{
+   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+          height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+  color:  white ;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+h1{
+   margin-top: 25px;
+      color:  white;
+   text-align: center;
+     font-family: sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+
+}
+
+#logo{
+  height: 45px;
+  width:  45px;
+}
+
+
+#btn{
+    font-family: Palatino, URW Palladio L, serif;
+    background-color: whitesmoke; /* Green */
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color:  black;
+
+}
+
+
+#btn:hover{
+    /*transform: scale(1.2);*/
+    background-color: #0d1d31;
+    color: white;
+    width: 100%;
+    border-radius: 0;
+
+}
+
+#contact{
+  margin-top: 5px;
+  margin-right: 5px;
+    color:  black;
+  float: right;
+  font-size: 15px;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+footer{
+  color:  whitesmoke;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+table ,th, td{
+    font-family: sans-serif;
+   border:  2px solid white;
+   border-collapse: collapse;
+   text-align: center;
+   color:  black;
+   padding: 0px;
+}
+table{
+  /* margin: 0 35vw ;*/
+   width: 45%;
+   border-spacing: 1px;
+   background-color: whitesmoke;
+   margin:  5px 0 0 0 ;
+   margin-bottom: 15px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#name{
+  color: white;
+}
+#blink{
+  color: black;
+}
+#btn3{
+    background-color: whitesmoke; /* Green */
+  border: none;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color:  black;
+  float: right;
+
+}
+#btn3:hover{
+    transform: scale(1.1);
+}
+
+#accseq{
+   width: 15%;
+}
+#accname{
+   width: 35%;
+}
+#accnum{
+   width: 30%;
+}
+#accbal{
+   width: 20%;
+}
+
+.modal {
+     font-family: sans-serif;
+     font-weight: bold;
+}
+
+.modal-footer{
+    background-color: #0d1d31;
+
+}

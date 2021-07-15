@@ -1,0 +1,128 @@
+body{
+   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+          height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+  color:  white ;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#logo{
+  height: 45px;
+  width:  45px;
+}
+
+.b1{
+  color: white;
+  /*border: 2px solid white;*/
+  width:  fit-content;
+  margin: 50px 0 30px 45px;
+
+  height: 200px;
+    /*background: #f7f7f7;*/
+    font-family: Palatino, URW Palladio L, serif;
+}
+
+#btn1{
+  margin:0 43vw;
+    background-color: whitesmoke; /* Green */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  color:  black;
+
+}
+.b2{
+  color: white;
+  /*border: 2px solid white;*/
+  width:  fit-content;
+  margin: 50px 0 30px 45px;
+
+  height: 200px;
+    /*background: #f7f7f7;*/
+    font-family: Palatino, URW Palladio L, serif;
+}
+
+#btn2{
+  margin:0 39vw;
+  position: relative;
+  background-color: whitesmoke; /* Green */
+  border: none;
+  
+  padding: 15px 32px;
+  text-align: center;
+  color:  black;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+#btn2:hover{
+    transform: scale(1.2);
+}
+#btn1:hover{
+    transform: scale(1.2);
+}
+
+#contact{
+  margin-top: 5px;
+  margin-right: 5px;
+    color:  black;
+  float: right;
+  font-size: 15px;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+footer{
+  color:  whitesmoke;
+  text-align: center;
+          position: absolute;
+            padding: 10px 10px 5px 10px;
+            bottom: 0;
+            width: 100%;
+}
+
+p{
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+#name{
+  color: white;
+}
+#blink{
+  color: black;
+}
+
+
+#btn3{
+    background-color: whitesmoke; /* Green */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+  font-weight: bold;
+  color:  black;
+  float: right;
+
+}
+#btn3:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transfer Money</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="user.css">
+
+</head>
+
+
+<body>
+
+  <!-- Back to Home Page -->
+
+  <header>
+    <a href="BankingSystem.html"><img src="B.jpg" alt="Banking Logo" id="logo"></img></a>
+    <head><a href="BankingSystem.html" id="name">Basic Banking System</a></head>
+    <a href="https://www.linkedin.com/in/rushikesh-pallod/" ><button id="btn3"> Connect with Developer</button></a>
+  </header>
+
+<!-- Modal send money -->
+<div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="input-group mb-3">
+          <input type="text" id="enterSName" class="form-control" placeholder="Sender's username" aria-label="Sender's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" id="enterName" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+    </div>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Rs. ₹</span>
+</div>
+<input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount" aria-label="Amount">
+<div class="input-group-append">
+    <span class="input-group-text">.00</span>
+</div>
+</div>
+
+</form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+  <button type="button" onclick="sendMoney()" class="btn btn-light" data-dismiss="modal">Send
+  Money</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal transaction History-->
+<div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      <ol id="transaction-history-body">
+
+      </ol>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- table  -->
+<div >
+
+    <div><h1>USERS</h1></div>
+
+    <table class="center">
+        <thead>
+            <tr>
+                <th id="accseq">Sr. No.</th>
+                <th id="accname">Name</th>
+                <th id="accnum">E-mail Id</th>                     
+                <th id="accbal">Balance</th>
+            </tr>
+        </thead>
+        <tr >
+            <td >1</td>
+            <td>Demo1</td>
+            <td>Demo1@gmail.com</td>
+            <td>
+                <p id="Demo1BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >2</td>
+            <td>Demo2</td>
+            <td>Demo2@gmail.com</td>
+            <td>
+                <p id="Demo2BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >3</td>
+            <td>Demo3</td>
+            <td>Demo3@gmail.com</td>
+            <td>
+                <p id="Demo3BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >4</td>
+            <td>Demo4</td>
+            <td>Demo4@gmail.com</td>
+            <td>
+                <p id="Demo4BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >5</td>
+            <td>Demo5</td>
+            <td>Demo5@gmail.com</td>
+            <td>
+                <p id="Demo5BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >6</td>
+            <td>Demo6</td>
+            <td>Demo6@gmail.com</td>
+            <td>
+                <p id="Demo6BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >7</td>
+            <td>Demo7</td>
+            <td>Demo7@gmail.com</td>
+            <td>
+                <p id="Demo7BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >8</td>
+            <td>Demo8</td>
+            <td>Demo8@gmail.com</td>
+            <td>
+                <p id="Demo8BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >9</td>
+            <td>Demo9</td>
+            <td>Demo9@gmail.com</td>
+            <td>
+                <p id="Demo9BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr >
+            <td >10</td>
+            <td>Demo10</td>
+            <td>Demo10@gmail.com</td>
+            <td>
+                <p id="Demo10BankBalance">15000</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="btn" data-toggle="modal" data-target="#sendMoney">Transfer</button></td>
+
+            <td colspan="2"><a href="history.html" data-toggle="modal" data-target="#transactionHistory" ><button type="button" id="btn">Transaction History</button></a></td>
+
+        </tr>
+
+    </table>
+
+</div>
+</section>
+
+
+
+<script src="transact.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+<footer>Rushikesh Pallod &copy Copyright 2021  </footer>
+
+</html>
